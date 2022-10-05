@@ -13,41 +13,41 @@
     <link rel="stylesheet" href="./css/styles.css"/>
 </head>
 <body>
-    <header>
-        <a class="link logo" href="./index.html"><span class="logo-web">Web</span>Studio</a>
-        <nav>
-          <ul class="list site-nav">
-            <li><a class="link" href="./index.html">Студія</a></li>
-            <li><a class="link current" href="./portfolio.html">Портфоліо</a></li>
-            <li><a class="link" href="#">Контакти</a></li>
-          </ul>
-        </nav>
-        <ul class="list auth-nav">
-          <li>
-            <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
-          </li>
-          <li>
-            <a class="link" href="tel:+380961111111">+380961111111</a>
-          </li>
-        </ul>
-      </header>
+  <header>
+    <a class="link logo" href="./index.html"><span class="logo-web">Web</span>Studio</a>
+    <nav>
+      <ul class="list site-nav">
+        <li><a class="link site-nav-link" href="./index.html">Студія</a></li>
+        <li><a class="link site-nav-link current" href="./portfolio.html">Портфоліо</a></li>
+        <li><a class="link site-nav-link" href="#">Контакти</a></li>
+      </ul>
+    </nav>
+    <ul class="list auth-nav">
+      <li>
+        <a href="mailto:info@devstudio.com" class="link auth-nav-link">info@devstudio.com</a>
+      </li>
+      <li>
+        <a class="link auth-nav-link" href="tel:+380961111111">+380961111111</a>
+      </li>
+    </ul>
+  </header>
     <main>
     <section class="section-work">
         <h1 class="visually-hidden ">Наші роботи</h1>
-        <ul class="list button">
-            <li><button type="button">Усі</button></li>
-            <li><button type="button">Веб-сайти</button></li>
-            <li><button type="button">Додатки</button></li>
-            <li><button type="button">Дизайн</button></li>
-            <li><button type="button">Маркетинг</button></li>
+        <ul class="list filter">
+            <li><button type="button" class="filter-button">Усі</button></li>
+            <li><button type="button" class="filter-button">Веб-сайти</button></li>
+            <li><button type="button" class="filter-button">Додатки</button></li>
+            <li><button type="button" class="filter-button">Дизайн</button></li>
+            <li><button type="button" class="filter-button">Маркетинг</button></li>
         </ul>        
-        <ul class="list">
-           <li><a>
+        <ul class="list project">
+           <li class="project-item"><a>
                 <img src="./images/websiteone.jpg"
                 alt="Технокряк"
                 width="370"
                 height="294"/>
-                <h3 class="work-title">Технокряк</h3>
+                <h2 class="work-title">Технокряк</h2>
                 <p class="work-description">Веб-сайт</p>
             </a></li>
             <li><a>
@@ -55,7 +55,7 @@
                 alt="Постер New Orlean vs Golden Star"
                 width="370"
                 height="294"/>
-                <h3 class="work-title">Постер New Orlean vs Golden Star</h3>
+                <h2 class="work-title">Постер New Orlean vs Golden Star</h2>
                 <p class="work-description">Дизайн</p>
             </a></li>
            <li><a>
@@ -63,7 +63,7 @@
                 alt="Ресторан Seafood"
                 width="370"
                 height="294"/>
-                <h3 class="work-title">Ресторан Seafood</h3>
+                <h2 class="work-title">Ресторан Seafood</h2>
                 <p class="work-description">Додаток</p>
            </a></li>
             <li><a>
@@ -71,7 +71,7 @@
                 alt="Проєкт Prime"
                 width="370"
                 height="294"/>
-                <h3 class="work-title">Проєкт Prime</h3>
+                <h2 class="work-title">Проєкт Prime</h2>
                 <p class="work-description">Маркетинг</p>
             </a></li>
             <li><a>
@@ -79,7 +79,7 @@
                 alt="Проєкт Boxes"
                 width="370"
                 height="294"/>
-                <h3 class="work-title">Проєкт Boxes</h3>
+                <h2 class="work-title">Проєкт Boxes</h2>
                 <p class="work-description">Додаток</p>
             </a></li>
             <li><a>
@@ -87,7 +87,7 @@
                 alt="Inspiration has no Borders"
                 width="370"
                 height="294"/>
-                <h3 class="work-title">Inspiration has no Borders</h3>
+                <h2 class="work-title">Inspiration has no Borders</h2>
                 <p class="work-description">Веб-сайт</p>
             </a></li>
             <li><a>
@@ -95,7 +95,7 @@
                 alt="Видання Limited Edition"
                 width="370"
                 height="294"/>
-                <h3 class="work-title">Видання Limited Edition</h3>
+                <h2 class="work-title">Видання Limited Edition</h2>
                 <p class="work-description">Дизайн</p>
             </a></li>
             <li><a>
@@ -103,7 +103,7 @@
                 alt="Проєкт LAB"
                 width="370"
                 height="294"/>
-                <h3 class="work-title">Проєкт LAB</h3>
+                <h2 class="work-title">Проєкт LAB</h2>
                 <p class="work-description">Маркетинг</p>
             </a></li>
             <li><a>
@@ -111,23 +111,23 @@
                 alt="Growing Business"
                 width="370"
                 height="294"/>
-                <h3 class="work-title">Growing Business</h3>
+                <h2 class="work-title">Growing Business</h2>
                 <p class="work-description">Додаток</p>
             </a></li>
             </ul>
     </section>
 </main>
 <footer class="footer">
-    <a class="link logo logo-secondary" href=""><span class="logo-web">Web</span>Studio</a>
-    <address class="adress">
-      <ul class="list">
-        <li>
-          <a class="link place" href="https://goo.gl/maps/5vC8ej6zF8LC972o7">м. Київ, пр-т Лесі Українки, 26</a>
-        </li>
-        <li><a class="link nav-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a class="link nav-link" href="tel:+380961111111">+380961111111</a></li>
-      </ul>
-    </address>
-  </footer>
+  <a class="link logo logo-secondary" href=""><span class="logo-web">Web</span>Studio</a>
+  <address>
+    <ul class="list adress">
+      <li>
+        <a class="link adress-link place" href="https://goo.gl/maps/5vC8ej6zF8LC972o7">м. Київ, пр-т Лесі Українки, 26</a>
+      </li>
+      <li><a class="link adress-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+      <li><a class="link adress-link" href="tel:+380961111111">+380961111111</a></li>
+    </ul>
+  </address>
+</footer>
 </body>
 </html>
