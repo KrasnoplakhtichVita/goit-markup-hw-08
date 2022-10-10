@@ -36,6 +36,8 @@ body {
 }
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 /* header */
 /* Логотип */
@@ -69,11 +71,18 @@ body {
 .current {
 color: var(--color-accent);
 }
-/* Hero */
+/* Hero */ 
 .hero {
-  background: var(--background-accent);  
+  text-align: center;  
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background: var(--background-accent);
 }
 .hero-title {
+  max-width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -82,6 +91,10 @@ color: var(--color-accent);
   color: var(--main-white-color);
 }
 .hero-button {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 216px;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -97,7 +110,8 @@ background: var(--color-accent-active);
 }
 /* Наші переваги */
 .section {
-  background: var(--background-secondary); 
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .section-caption {
   font-weight: 700;
@@ -115,6 +129,8 @@ background: var(--color-accent-active);
 }
 /* Наша команда */
 .section-title {
+  margin-bottom: 50px;
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -124,14 +140,15 @@ background: var(--color-accent-active);
 .team {
   background: var(--background-team);
 }
-.section-subtitle {
+.section-subtitle { 
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--title-color);
 }
-.section-description {
+.section-description { 
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -139,12 +156,9 @@ background: var(--color-accent-active);
   color: var(--title-color);
 }
 /* footer */
-.footer {
-  background: var(--background-accent);
-}
 .logo-secondary,
 .adress-link.place {
-  color: var(--main-white-color);
+ color: var(--main-white-color);
 }
 .adress-link {
   font-style: normal;
@@ -186,4 +200,111 @@ background: var(--color-accent-active);
 .link:hover,
 .link:focus {
 color: var(--color-accent);
+}
+
+/* Позиціонування */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.page-header {
+  background: var(--background-primary);
+}
+.container {
+  display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  outline: 2px solid tomato;
+ }
+ /* Header */
+ .header-container {
+  display: flex;
+  align-items: center;
+ }
+ .header-nav {
+  display: flex;
+  align-items: center;
+ }
+ .site-nav {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+ }
+ .auth-nav {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+ }
+/* Наші переваги */
+.container-advantages {
+  display: flex;
+ }
+.advantages-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.advantages-caption {
+  display: block;
+  margin-bottom: 10px;
+}
+/* Чим ми займаємося */
+.activity-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+/* Наша команда */
+.team-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.team-text {
+  text-align: center;
+  padding: 30px 70px;
+}
+.team-item {
+background: var(--background-primary);
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+}
+/* footer */
+.footer {
+  background: var(--background-accent);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.adress-content {
+  display: flex;
+  flex-direction: column;
+}
+.logo-secondary {
+  display: block; 
+  margin-bottom: 20px;
+}
+.adress-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+/* Портфоліо */
+.filter-container {
+  display: flex;
+}
+.project-container {
+  display: flex;
 }
