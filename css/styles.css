@@ -125,14 +125,16 @@ img {
 
 .auth-nav-link {
   display: flex;
-  align-items: center;  
+  align-items: center;
+  color: var(--color-primary);  
 }
 .auth-nav-icon {
   margin-right: 10px;
-  fill: var(--color-primary);
+  fill: currentColor;
 }
-.auth-nav-link:hover .auth-nav-icon{
-  fill: var(--color-accent);
+.auth-nav-link:hover,
+.auth-nav-link:focus {
+  color: var(--color-accent);
 }
 /* Hero */
 .hero {
@@ -302,14 +304,16 @@ margin-bottom: 16px;
   width: 100%;
   height: 100%;
   border-radius: 50%;
+  color: var(--color-primary);
   background-color: var(--background-primary);
 }
 .social-icon {
-  fill: var(--clients-icon-color); 
+  fill: currentColor; 
 }
-.social-link:hover .social-icon {
+.social-link:hover,
+.social-link:focus {
   background-color: var(--color-accent-active);
-  fill: var(--main-white-color);  
+  color: var(--main-white-color);  
 }
 
 /* Клієнти */
@@ -317,8 +321,7 @@ margin-bottom: 16px;
   display: flex;  
   gap: 30px;
 }
-.clients-item {
-  width: 170px;
+.clients-item { 
   height: 92px;
   flex-basis: calc((100%-5*30px)/6);
 }
@@ -329,14 +332,15 @@ margin-bottom: 16px;
   justify-content: center;
   align-items: center;  
   border: 1px solid var(--clients-icon-color);
+  color: var(--clients-icon-color);
   border-radius: 4px;
 }
 .clients-icon {
-  fill: var(--clients-icon-color);
+  fill: currentColor;
 }
 .clients-link:hover,
 .clients-link:focus {
-  fill: var(--color-accent);
+  color: var(--color-accent);
   border-color: var(--color-accent);
 }
 
@@ -392,7 +396,7 @@ margin-bottom: 16px;
 .social-icon-footer {
   fill: var(--main-white-color);
 }
-.social-link {
+.social-link-footer {
   align-items: center;
   display: flex;
   justify-content: center;
