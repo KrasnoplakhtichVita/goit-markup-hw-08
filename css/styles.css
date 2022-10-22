@@ -304,7 +304,7 @@ margin-bottom: 16px;
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  color: var(--color-primary);
+  color: var(--clients-icon-color);
   background-color: var(--background-primary);
 }
 .social-icon {
