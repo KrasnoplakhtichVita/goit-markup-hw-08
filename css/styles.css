@@ -656,8 +656,8 @@ margin-bottom: 16px;
   color: var(--main-white-color);
 }
 
-.project-link:hover,
-.project-link:focus {
+.project-link:hover .project-overley,
+.project-link:focus .project-overley {
   transform: translateY(0);
 }
 
