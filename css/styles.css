@@ -210,9 +210,11 @@ img {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+
   cursor: pointer;
   color: var(--main-white-color);
   background-color: var(--color-accent);
+
   transition-property: background-color;
 }
 
@@ -270,6 +272,9 @@ img {
 }
 
 /* Чим ми займаємося */
+.activity {
+  padding-top: 0;
+}
 
 .activity-list {  
   display: flex;
@@ -315,10 +320,6 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--title-color);
-}
-
-.activity {
-  padding-top: 0;
 }
 
 .team {
@@ -601,7 +602,7 @@ margin-bottom: 16px;
 }
 
 .project-link {
-  transition-property: display, box-shadow;
+  transition-property: display, box-shadow, transform;
 }
 
 .project-link:hover,
@@ -641,7 +642,6 @@ margin-bottom: 16px;
   
   background-color: rgba(33, 150, 243, 0.9); 
 
-  transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(100%);
@@ -656,8 +656,8 @@ margin-bottom: 16px;
   color: var(--main-white-color);
 }
 
-.project-link:hover .project-overley,
-.project-link:focus .project-overley {
+.project-link:hover,
+.project-link:focus {
   transform: translateY(0);
 }
 
@@ -708,7 +708,7 @@ margin-bottom: 16px;
   width: 30px;
   height: 30px; 
   cursor: pointer;
-  padding: 9px;
+  padding: 9px 9px 10px 10px;
 
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--background-primary);
