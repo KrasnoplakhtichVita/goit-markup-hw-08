@@ -602,7 +602,7 @@ margin-bottom: 16px;
 }
 
 .project-link {
-  transition-property: display, box-shadow, transform;
+  transition-property: display, box-shadow;
 }
 
 .project-link:hover,
@@ -642,6 +642,7 @@ margin-bottom: 16px;
   
   background-color: rgba(33, 150, 243, 0.9); 
 
+  transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(100%);
