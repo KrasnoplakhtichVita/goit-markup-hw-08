@@ -98,6 +98,8 @@ img {
   color: var(--title-color);
 
   transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav-link:hover,
@@ -216,6 +218,8 @@ img {
   background-color: var(--color-accent);
 
   transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -389,6 +393,8 @@ margin-bottom: 16px;
   background-color: var(--background-primary);
 
   transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon {
@@ -424,6 +430,8 @@ margin-bottom: 16px;
   border-radius: 4px;
 
   transition-property: color,  border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-icon {
@@ -452,6 +460,8 @@ margin-bottom: 16px;
   color: var(--main-white-color) 60%;
 
   transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .adress-link:hover,
@@ -510,6 +520,8 @@ margin-bottom: 16px;
   background-color: rgba(255, 255, 255, 0.1);
 
   transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link-footer:hover,
@@ -535,6 +547,8 @@ margin-bottom: 16px;
   background: var(--background-team);
 
   transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-button:hover,
@@ -563,6 +577,8 @@ margin-bottom: 16px;
 
 .link {
   transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link:hover,
@@ -603,6 +619,8 @@ margin-bottom: 16px;
 
 .project-link {
   transition-property: display, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-link:hover,
