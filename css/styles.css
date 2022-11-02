@@ -488,7 +488,7 @@ margin-bottom: 16px;
 }
 
 .adress-container {
-  width: 301px;
+  width: 231px;
   margin-right: 70px;
 }
 
@@ -810,6 +810,10 @@ margin-bottom: 16px;
   border-radius: 50%;
 }
 
+.button-close:hover,
+.button-close:focus {
+fill: var(--color-accent);
+}
 
 /* Форма */
 
@@ -875,6 +879,7 @@ margin-bottom: 16px;
 }
 
 .form-textarea { 
+  display: block;
   width: 100%;
   height: 120px;
   resize: none;
@@ -939,7 +944,7 @@ margin-bottom: 16px;
 
 .checkbox-text {  
   display: block;    
-  padding-right: 5px;
+  margin-right: 5px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
