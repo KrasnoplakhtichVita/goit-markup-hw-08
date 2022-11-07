@@ -1,0 +1,48 @@
+.section__title {
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+
+.activity-section {
+    padding-top: 0;
+  }
+  
+  .activity {  
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  
+  .activity__thumb {
+    position: relative;    
+  }
+  
+  .activity__overlay { 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+  
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70px; 
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+  
+  .activity__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    color: var(--main-white-color);
+  }
+  
