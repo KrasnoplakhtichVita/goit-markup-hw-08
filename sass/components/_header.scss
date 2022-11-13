@@ -1,43 +1,32 @@
 .page-header {
-    background-color: var(--background-primary);
+    background-color: $background-primary;
     border-bottom: 1px solid #ececec;
   }
 
 .header {
     display: flex;
     align-items: center;
+
+  &__logo {
+      margin-right: 93px;
+    }
+
+  &__span {
+      color: $color-accent;
+    }
+
+  &-navigation {
+      @include centredFlex(space-between);
   } 
-
-.logo {
-    font-family: Raleway, sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: var(--main-black-color);
-  }
+}
   
-  .header__logo {
-    margin-right: 93px;
-  }
-
-  .header__span {
-    color: var(--color-accent);
-  }
-  
-  .header-navigation {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .navigation {
+ .navigation {
     display: flex;
     gap: 50px;
-  }
 
-  .navigation__item {
-    position: relative;
+   &__item {
+      position: relative;
+    }
   }
 
   .navigation__link,
@@ -49,7 +38,7 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     
-    color: var(--title-color);
+    color: $title-color;
   
     transition-property: color;
     transition-duration: 250ms;
@@ -61,26 +50,26 @@
   .contact__link:hover,
   .contact__link:focus,
   .current {
-    color: var(--color-accent);
+    color: $color-accent;
   }
          
   .contact {
     display: flex;
     gap: 50px;
     margin-left: auto;
+
+    &__link {
+      display: flex;
+      align-items: center;
+      color: $primary-color;  
+    } 
+   
+    &__icon {
+      margin-right: 10px;
+      fill: currentColor;
+    }
   }
   
-  .contact__link {
-    display: flex;
-    align-items: center;
-    color: var(--color-primary);  
-  }
-  
-  .contact__icon {
-    margin-right: 10px;
-    fill: currentColor;
-  }
-    
     .current::after {
     display: inline-block;
     position: absolute;
@@ -90,6 +79,6 @@
     left: 0;
     bottom: -1px;
 
-    background-color: var(--color-accent);
+    background-color: $color-accent;
     border-radius: 2px;
    }

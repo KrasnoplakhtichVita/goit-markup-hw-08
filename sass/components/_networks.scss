@@ -1,0 +1,30 @@
+.networks {
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+    
+    &__item {
+      width: 44px;
+      height: 44px;
+    }
+
+    &__link {
+    @extend %networks__link;   
+        
+        &:hover,
+        &:focus {
+          background-color: $accent-active;
+          color: $white-color;  
+    }   
+    } 
+
+    &__link-footer {
+        @extend %networks__link; 
+        color: $white-color; 
+        background-color: $white-footer-color;
+    } 
+
+    &__icon {
+    fill: currentColor; 
+    } 
+}

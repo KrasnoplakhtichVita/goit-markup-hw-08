@@ -2,33 +2,35 @@
     display: flex;
     justify-content: space-between;
     gap: 30px;
-  }
 
-  .advantages__container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  &__container {
+    @include centredFlex();
     width: 270px;
     height: 120px;
-    background-color: var(--background-team);
+    background-color: $background-team;
     margin-bottom: 30px;
-  }
+    }
 
-.advantages__title {
+  &__title {
     display: block;
     margin-bottom: 10px;
-
+  
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--title-color);
+    color:$title-color;
+  }  
+
+  &__text {   
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
   }
 
-.advantages__text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
+  
+
+
+

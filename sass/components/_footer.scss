@@ -1,37 +1,6 @@
-.logo-secondary,
-.adress-link.place {
-  color: var(--main-white-color);
-}
-
-.adress-link {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em; 
-  color: var(--main-white-color) 60%;
-
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.adress-link:hover,
-.adress-link:focus {
-  color: var(--color-accent);
-}
-
-.footer {
-  background-color: var(--background-accent);
+.page-footer {
+  background-color: $background-accent;
   padding: 60px 0;
-}
-
-.logo-secondary {
-  display: block;
-  margin-bottom: 20px;
-}
-.adress-item:not(:last-child) {
-  margin-bottom: 9px;
 }
 
 .footer-container {
@@ -39,120 +8,114 @@
   align-items: baseline;
 }
 
-.adress-container {
+.footer__logo.logo {
+  display: block;
+  margin-bottom: 20px;
+  color: $white-color;
+}
+ 
+.footer__span {
+  color: $color-accent;
+}
+
+.adress {
   width: 231px;
   margin-right: 70px;
+
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  } 
+
+  &__link {
+    font-style: normal;    
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em; 
+    color: $adress-color;
+  
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   
+    &:hover,
+    &:focus {
+      color: $color-accent;
+    }      
+  }   
+  &__link--white {
+    color: $white-color;
+
+    &:focus,
+    &:hover {
+      color: $color-accent;
+  } 
+ }
 }
 
-.social-text {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--main-white-color);
-  margin-bottom: 20px;
-}
-
-.social-list {
-  display: flex;
-  gap: 10px;
-}
-
-.social-icon-footer {
-  fill: var(--main-white-color);
-}
-
-.social-link-footer {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
-
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.social-link-footer:hover,
-.social-link-footer:focus {
-  background-color: var(--color-accent);
-}
-
-.footer-icons-container {
+.footer-networks {
   margin-right: 93px;
+
+  &__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $white-color;
+    margin-bottom: 20px;
+  }
 }
 
-.send-form {
+.subscription {
   display: flex;
+
+  &__field {
+    display: flex;
+  }
+
+  &__title { 
+    margin-bottom: 20px;
+  
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+  
+    text-transform: uppercase;
+    color: $white-color;
+  }
+
+  &__button { 
+    @include centredFlex();
+    @extend %button;
+
+    padding: 10px 28px;
+    gap: 10px;
+    min-width: 200px;
+    height: 50px;
+    fill: $white-color; 
+  
+    &:hover,
+    &:focus {
+      background-color: $accent-active;
+    } 
+  }
 }
 
-.footer-field {
-  display: flex;
-}
-
-.footer-title { 
-  margin-bottom: 20px;
-
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-
-  text-transform: uppercase;
-  color: var(--main-white-color);
-}
-
-.footer-input {
+.subscription__input {
   min-width: 358px;
   height: 50px;
   padding: 15px 16px;
   margin-right: 12px;
   outline: none;
 
-  color: var(--main-white-color);
+  color: $white-color;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  background-color: var(--background-accent);
+  background-color: $background-accent;
 }
 
-.footer-input {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-button { 
-  display: flex;  
-  padding: 10px 28px; 
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  min-width: 200px;
-  height: 50px;
-  cursor: pointer;
-
-  font-style: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-
-  color: var(--main-white-color);
-  fill: var(--main-white-color);
-  background-color: var(--color-accent);
-  border-radius: 4px;
-  border: none;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-button:hover,
-.footer-button:focus {
-  background-color: var(--color-accent-active);
+.subscription__input {
+  color: $adress-color;
 }

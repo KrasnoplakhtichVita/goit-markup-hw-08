@@ -4,18 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Студія</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    />
-    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <title>Студія</title>   
     <link rel="stylesheet" href="./css/main.min.css"/>
   </head>
   
@@ -65,7 +54,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hero__button" data-modal-open>Замовити послугу</button>
+          <button type="button" class="hero__button button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
 
@@ -75,7 +64,7 @@
           <ul class="advantages">
             <li>
               <div class="advantages__container">
-                <svg class="advantages__icon" width="70" height="70">
+                <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
@@ -86,7 +75,7 @@
             </li>
             <li>
               <div class="advantages__container">
-                <svg class="advantages__icon" width="70" height="70">
+                <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
@@ -97,7 +86,7 @@
             </li>
             <li>
               <div class="advantages__container">
-                <svg class="advantages__icon" width="70" height="70">
+                <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
@@ -108,7 +97,7 @@
             </li>
             <li>
               <div class="advantages__container">
-                <svg class="advantages__icon" width="70" height="70">
+                <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
@@ -283,7 +272,7 @@
                 <h3 class="team__subtitle">Михайло Єрмаков</h3>
                 <p lang="en" class="team__desription">UI designer</p>
                 <ul class="networks">
-                  <li class="snetworks__item">
+                  <li class="networks__item">
                     <a href="#" class="networks__link">
                       <svg class="networks__icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-instagram"></use>
@@ -369,69 +358,70 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="page-footer">
       <div class="container">
         <div class="footer-container">
-          <div class="adress-container">
-            <a class="logo logo-secondary" href=""><span class="logo-web">Web</span>Studio</a>
+
+          <div class="footer">
+            <a class="footer__logo logo" href="">
+              <span class="footer__span">Web</span>Studio</a>           
             <address>
-              <ul class="adress adress-content">
-                <li class="adress-item">
-                  <a class="adress-link place" href="https://goo.gl/maps/5vC8ej6zF8LC972o7"
-                    >м. Київ, пр-т Лесі Українки, 26</a
-                  >
+              <ul class="adress">
+                <li class="adress__item">
+                  <a class="adress__link adress__link--white" href="https://goo.gl/maps/5vC8ej6zF8LC972o7">
+                    м. Київ, пр-т Лесі Українки, 26
+                  </a>
                 </li>
-                <li class="adress-item">
-                  <a class="adress-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <li class="adress__item">
+                  <a class="adress__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
-                <li class="adress-item">
-                  <a class="adress-link" href="tel:+380961111111">+380961111111</a>
+                <li class="adress__item">
+                  <a class="adress__link" href="tel:+380961111111">+380961111111</a>
                 </li>
               </ul>
             </address>
           </div>
-          <div class="footer-icons-container">
-            <p class="social-text">Приєднуйтесь</p>
-            <ul class="social-list">
-              <li class="social-item">
-                <a href="#" class="social-link-footer">
-                  <svg class="social-icon-footer" width="20" height="20">
+          
+          <div class="footer-networks">
+            <p class="footer-networks__text">Приєднуйтесь</p>
+            <ul class="networks">
+              <li class="networks__item">
+                <a href="#" class="networks__link networks__link-footer">
+                  <svg class="networks__icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
-              <li class="social-item">
-                <a href="#" class="social-link-footer">
-                  <svg class="social-icon-footer" width="20" height="20">
+              <li class="networks__item">
+                <a href="#" class="networks__link networks__link-footer">
+                  <svg class="networks__icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
-              <li class="social-item">
-                <a href="#" class="social-link-footer">
-                  <svg class="social-icon-footer" width="20" height="20">
+              <li class="networks__item">
+                <a href="#" class="networks__link networks__link-footer">
+                  <svg class="networks__icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
-              <li class="social-item">
-                <a href="#" class="social-link-footer">
-                  <svg class="social-icon-footer" width="20" height="20">
+              <li class="networks__item">
+                <a href="#" class="networks__link networks__link-footer">
+                  <svg class="networks__icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-linkedin"></use>
                   </svg>
                 </a>
               </li>
             </ul>
-          </div>
-       
-     
+          </div>          
 
-      <div class="send-form">
+      <div class="subscription">
         <form>          
-        <p class="footer-title"> ПІДПИШІТЬСЯ НА РОЗСИЛКУ </p>
-        <div class="footer-field">
-          <input type="email" name="email" id="email" class="footer-input" placeholder="E-mail"/>
-        <button type="submit" class="footer-button">
+        <p class="subscription__title"> ПІДПИШІТЬСЯ НА РОЗСИЛКУ </p>
+        <div class="subscription__field">
+          <input type="email" name="email" id="email" class="subscription__input" placeholder="E-mail"/>
+        <button type="submit" class="subscription__button">
           Підписатися
           <svg width="24" height="24">
             <use href="./images/icons.svg#icon-send"></use>
@@ -447,52 +437,55 @@
     
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="button-close" data-modal-close>
-          <svg class="icon-close" width="11" height="11">
+        <button type="button" class="modal__button" data-modal-close>
+          <svg class="modal__icon" width="11" height="11">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
 
         <form class="form" autocomplete="off">
-          <p class="form-title">Залиште свої дані, ми вам передзвонимо</p>                  
-          <label for="user-name" class="form-label">Ім'я</label> 
-          <div class="form-field">         
-          <input type="text" name="user-name" class="form-input" id="user-name"/>
-          <svg class="form-icon" width="18" height="18">
+          <p class="form__title">Залиште свої дані, ми вам передзвонимо</p>
+          <label for="user-name" class="form__label">Ім'я</label> 
+          <div class="form__field">         
+          <input type="text" name="user-name" class="form__input" id="user-name"/>
+          <svg class="form__icon" width="18" height="18">
             <use href="./images/icons.svg#icon-person"></use>
           </svg>
          </div>         
-          <label for="telephone" class="form-label">Телефон</label>
-          <div class="form-field">
-          <input type="tel" name="telephone" class="form-input" id="telephone"/>
-          <svg class="form-icon" width="18" height="18">
+          <label for="telephone" class="form__label">Телефон</label>
+          <div class="form__field">
+          <input type="tel" name="telephone" class="form__input" id="telephone"/>
+          <svg class="form__icon" width="18" height="18">
             <use href="./images/icons.svg#icon-phone"></use>
           </svg>
          </div>         
-          <label for="e-mail" class="form-label">Пошта</label>
-          <div class="form-field">
-          <input type="email" name="e-mail" class="form-input" id="e-mail"/>
-          <svg class="form-icon" width="18" height="18">
+          <label for="e-mail" class="form__label">Пошта</label>
+          <div class="form__field">
+          <input type="email" name="e-mail" class="form__input" id="e-mail"/>
+          <svg class="form__icon" width="18" height="18">
             <use href="./images/icons.svg#icon-email"></use>
           </svg>
-         </div>       
-           <label for="comment" class="form-label">Коментар</label>          
-          <textarea name="comment" id="comment" class="form-textarea" placeholder="Введіть текст"></textarea>
+         </div>      
+
+           <label for="comment" class="form__label">Коментар</label>          
+          <textarea name="comment" id="comment" class="form__textarea" placeholder="Введіть текст"></textarea>
               
-              <label class="checkbox-label">          
-                <input class="checkbox-input" type="checkbox" name="checkbox"/>
-                <svg class="icon-checkbox" width="16" height="15">
+              <label class="checkbox">          
+                <input class="checkbox__input" type="checkbox" name="checkbox"/>
+                <svg class="checkbox__icon" width="16" height="15">
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
-                <span class="checkbox-text">Погоджуюся з розсилкою та приймаю</span>
-                <a href="#" class="checkbox-link"> Умови договору</a>
+                <span class="checkbox__text">Погоджуюся з розсилкою та приймаю</span>
+                <a href="#" class="checkbox__link"> Умови договору</a>
               </label>     
          
-        <button type="submit" class="form-button">Відправити</button>
+        <button type="submit" class="form__button button">Відправити</button>
         </form>
 
          </div>
       </div>
+
       <script src="./modal.js"></script>
+
   </body>
 </html>

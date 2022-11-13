@@ -1,77 +1,17 @@
-/* Приховані заголовки */
-.visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
-  }
-  
-  /* Основні кольори */
-  
-  :root {
-    --color-primary: #757575;
-    --main-white-color: #ffffff;
-    --main-black-color: #000000;
-    --title-color: #212121;
-    --background-primary: #ffffff;
-    --background-accent: #2f303a;
-    --background-secondary: #f5f5f5;
-    --background-team: #f5f4fa;
-    --color-accent: #2196f3;
-    --color-accent-active: #188ce8;
-    --background-work: #eeeeee;
-    --clients-icon-color: #afb1b8;
-  }
-  
-  body {
-    font-family: Roboto, sans-serif;
-    color: var(--color-primary);
-    background-color: var(--background-primary);
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  ul {
-    margin: 0px;
-    padding: 0px;
-  }
-  
-  img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .container {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1200px;
-  }
+    $primary-color: #757575;
+    $white-color: #ffffff;
+    $white-footer-color: rgba(255, 255, 255, 0.1);
+    $adress-color: rgba(255, 255, 255, 0.6);
+    $black-color: #000000;
+    $title-color: #212121;
+    $color-accent: #2196f3;
+    $background-primary: #ffffff;
+    $background-accent: #2f303a;
+    $background-secondary: #f5f5f5;
+    $background-team: #f5f4fa;    
+    $accent-active: #188ce8;
+    $background-work: #eeeeee;
+    $clients-icon-color: #afb1b8;
 
-  .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
+  
+  

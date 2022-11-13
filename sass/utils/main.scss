@@ -1,8 +1,25 @@
 @import '../utils/variables';
+@import '../base/normalize';
+@import '../base/visually-hidden';
+@import '../base/base';
+
+@import '../utils/fonts';
+@import '../utils/mixins';
+@import '../utils/placeholders';
+
+@import '../components/activity';
+@import '../components/advantages';
+@import '../components/clients';
+@import '../components/filter';
+@import '../components/footer';
 @import '../components/header';
 @import '../components/hero';
-@import '../components/advantages';
-@import '../components/activity';
+@import '../components/logo';
+@import '../components/modal';
+@import '../components/networks';
+@import '../components/projects';
 @import '../components/team';
-@import '../components/clients';
-@import '../components/footer'
+
+
+
+
