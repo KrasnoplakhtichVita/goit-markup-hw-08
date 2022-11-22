@@ -1,32 +1,42 @@
-.page-header {
+.header {
     background-color: $background-primary;
     border-bottom: 1px solid #ececec;
   }
 
-.header {
+.header__container {
     display: flex;
     align-items: center;
-
-  &__logo {
-      margin-right: 93px;
-    }
-
-  &__span {
-      color: $color-accent;
-    }
-
-  &-navigation {
-      @include centredFlex(space-between);
-  } 
+    justify-content: space-between;
 }
+
+.header__logo {
+  @media screen and (min-width: $tablet) {
+  margin-right: 87px;
+}
+  @media screen and (min-width: $desktop) {
+  margin-right: 93px;
+}
+}
+
+.header__span {
+  color: $color-accent;
+}
+
+.header-navigation {
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+  @include centredFlex(space-between);
+}
+} 
   
  .navigation {
     display: flex;
-    gap: 50px;
+    gap: 50px;       
+  }
 
-   &__item {
-      position: relative;
-    }
+  .navigation__item {
+    position: relative;
   }
 
   .navigation__link,
@@ -43,7 +53,12 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
+}
+
+
+.contact .contact__link {
+  padding: 0;
+}
   
   .navigation__link:hover,
   .navigation__link:focus,
@@ -54,23 +69,35 @@
   }
          
   .contact {
-    display: flex;
-    gap: 50px;
-    margin-left: auto;
+    display: none;
 
-    &__link {
-      display: flex;
-      align-items: center;
-      color: $primary-color;  
-    } 
-   
-    &__icon {
-      margin-right: 10px;
-      fill: currentColor;
-    }
+    @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;     
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-left: auto;    
+  }
+}
+
+  .contact__link {
+    display: flex;
+    align-items: center;
+    color: $primary-color;  
+  } 
+ 
+  .contact__icon {
+    margin-right: 10px;
+    fill: currentColor;
   }
   
-    .current::after {
+  .navigation__link--current::after {
     display: inline-block;
     position: absolute;
     content: '';
@@ -82,3 +109,5 @@
     background-color: $color-accent;
     border-radius: 2px;
    }
+
+   

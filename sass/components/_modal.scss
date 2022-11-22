@@ -4,12 +4,17 @@
     left: 0;
     width: 100%;
     height: 100%;
+    padding: 93px 15px 94px 15px;
   
     background-color: rgba(0, 0, 0, 0.2); 
   
     transition-property: opacity, visibility, pointer-events;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);  
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: $tablet) {
+      padding: 0;
+  }
   }
   
   .is-hidden {
@@ -18,78 +23,100 @@
     pointer-events: none;  
   }
   
-  .modal {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: scale(1) translate(-50%, -50%);
+  .modal {   
+    position: relative;
+    width: 450px;
+    height: 609px;
+    margin-left: auto;
+    margin-right: auto;   
+
+        @media screen and (min-width: 320px) {
+          max-width: 320px;
+      }
   
-    min-width: 528px;
-    min-height: 581px;
-    
+      @media screen and (min-width: $mobile) {
+          min-width: 450px;
+      }
+
+      @media screen and (min-width: $tablet) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        }
+  
+      @media screen and (min-width: $desktop) {
+              min-width: 528px;
+              min-height: 581px;
+        }
+     
     background-color: $background-primary;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-
-    &__button {
-      position: absolute;
-      top: 8px;
-      right: 8px;
-    
-      @include centredFlex();
-      width: 30px;
-      height: 30px; 
-      cursor: pointer;
-      padding: 9px 9px 10px 10px;
-    
-      border: 1px solid rgba(0, 0, 0, 0.1);
-      background-color: $background-primary;
-      border-radius: 50%;
-  
-   &:hover,
-   &:focus {
-    fill: $color-accent;
-    }     
-   }  
+    border-radius: 4px;    
   }
-    
- .form { 
-    width: 528px;
-    padding: 40px;
 
-    &__title {
-      font-weight: 700;
-      font-size: 20px;
-      line-height: 1.15;
-      text-align: center;
-      letter-spacing: 0.03em;
-      margin-bottom: 12px;
-      color: $title-color;
-    }  
-
-    &__label {
-      display: block;
-      margin-bottom: 4px;      
-     
-      font-size: 12px;
-      line-height: 1.17;
-      color: $primary-color;
-    }
-
-    &__input {
-      margin: 0;
-      font-style: inherit;
-      padding: 11px 12px 11px 42px;
-      width: 100%;
-      height: 40px;
-      border: 1px solid rgba(33, 33, 33, 0.2);
-      border-radius: 4px;
-      outline: none;
+  .modal__button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
   
-      &:focus {
-          border-color: $color-accent;
-        }   
-    }   
+    @include centredFlex();
+    width: 30px;
+    height: 30px; 
+    cursor: pointer;
+    padding: 9px 9px 10px 10px;
+  
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: $background-primary;
+    border-radius: 50%;
+
+ &:hover,
+ &:focus {
+  fill: $color-accent;
+  }     
+ }  
+    
+ .form {     
+    padding: 40px; 
+  }   
+
+  .form__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 12px;
+    color: $title-color;
+
+  
+    @media screen and (min-width: $desktop) {            
+      line-height: 1.15;   
+   }    
+  }  
+
+  .form__label {
+    display: block;
+    margin-bottom: 4px;      
+   
+    font-size: 12px;
+    line-height: 1.17;
+    color: $primary-color;
+  }
+
+  .form__input {
+    margin: 0;
+    font-style: inherit;
+    padding: 11px 12px 11px 42px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: none;
+
+    &:focus {
+        border-color: $color-accent;
+      }   
   }   
      
   .form__input:focus + .form__icon {
@@ -143,47 +170,58 @@
   
   .checkbox { 
     @include centredFlex();
-    margin-bottom: 30px;
-
-    &__input {
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      appearance: none;
-      position: absolute;
-    }  
-
-    &__icon {    
-      display: block;
-      margin-right: 7px;
-      width: 16px;
-      height: 15px;
-                
-      border: 2px solid $title-color;
-      border-radius: 2px;
-      fill: $white-color;
-      
-      transition-property: border, background-color;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
-    }
-    
-    &__text {  
-      display: block;    
-      margin-right: 5px;
-      font-size: 14px;
-      line-height: 1.71;
-      letter-spacing: 0.03em;
-      color: $primary-color;
-    }
-    
-    &__link {
-      font-size: 14px;
-      line-height: 1.71;
-      letter-spacing: 0.03em;
-      color: $color-accent;
-      text-decoration: underline;
-    }
+    margin-bottom: 30px;   
    }
+
+   .checkbox__input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
+  }  
+
+  .checkbox__icon {    
+    display: block;
+    margin-right: 7px;
+    width: 16px;
+    height: 15px;
+              
+    border: 2px solid $title-color;
+    border-radius: 2px;
+    fill: $white-color;
+    
+    transition-property: border, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+  }
+  
+  .checkbox__text {  
+    display: block;    
+    margin-right: 3px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: $primary-color;
+
+    @media screen and (min-width: $desktop) {   
+      font-size: 14px;         
+      line-height: 1.71;   
+      margin-right: 5px;
+  }    
+  }
+  
+  .checkbox__link {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: $color-accent;
+    text-decoration: underline;
+
+    @media screen and (min-width: $desktop) {   
+      font-size: 14px;         
+      line-height: 1.71;   
+  }    
+  }
      
   .checkbox__input:checked + .checkbox__icon {
     border: none;
