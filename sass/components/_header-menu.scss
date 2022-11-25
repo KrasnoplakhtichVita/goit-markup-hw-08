@@ -18,6 +18,9 @@
 }
 
 .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
@@ -41,13 +44,8 @@
     right: 15px;
 }
 
-.navigation-menu {
-    margin-bottom: 302px;
-}
-
 .navigation-menu__link { 
     @include mobileStyle(); 
-    margin-bottom: 32px;
     font-size: 40px;
     line-height: 1.18;   
 
@@ -57,6 +55,17 @@
 &:focus {
    color:  $color-accent;
 } 
+}
+
+.navigation-menu__link--current { 
+transition-property: color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation-menu__link--current:hover,
+.navigation-menu__link--current:focus {
+color: $color-accent;
 }
 
 .contact-menu {
@@ -86,7 +95,6 @@
 
 .social-menu {
     display: flex;
-    justify-content: center;
 }
 
 .social-menu__link {

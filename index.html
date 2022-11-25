@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
     <link rel="stylesheet" href="./css/main.min.css"/>   
 </head>
-  </head>
   
   <body>
 
@@ -126,7 +125,10 @@
           <ul class="activity">
             <li>
               <div class="activity__thumb">
-                <img src="./images/programming.jpg" alt="programming" width="370" height="294" />
+                <img 
+                src="./images/programming@1x.jpg"
+                srcset="./images/programming@1x.jpg 1x, ./images/programming@2x.jpg 2x"
+                alt="programming" width="370" height="294"/>
                 <div class="activity__overlay">
                   <p class="activity__text">ДЕСКТОПНІ ДОДАТКИ</p>
                 </div>
@@ -134,7 +136,9 @@
             </li>
             <li>
               <div class="activity__thumb">
-              <img src="./images/testing.jpg" alt="testing" width="370" height="294" />
+              <img src="./images/testing@1x.jpg"
+              srcset="./images/testing@1x.jpg 1x, ./images/testing@2x.jpg 2x"
+              alt="testing" width="370" height="294"/>
               <div class="activity__overlay">
                 <p class="activity__text">МОБІЛЬНІ ДОДАТКИ</p>
               </div>
@@ -142,7 +146,9 @@
             </li>
             <li>
               <div class="activity__thumb">
-              <img src="./images/design.jpg" alt="design" width="370" height="294" />
+              <img src="./images/design@1x.jpg"
+              srcset="./images/design@1x.jpg 1x, ./images/design@2x.jpg 2x"
+              alt="design" width="370" height="294"/>
               <div class="activity__overlay">
                 <p class="activity__text">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
               </div>
@@ -168,10 +174,8 @@
               media="(min-width: 1200px)"
               />
               <img class="team__image"              
-              src="./images/tablet/teamprdesigner-354@1x.jpg 1x, ./images/tablet/teamprdesigner-354@1x.jpg 2x"
-              alt="Product designer" 
-              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"             
-              />
+              src="./images/tablet/teamprdesigner-354@1x.jpg"
+              alt="Product designer"/>
              </picture>
               <div class="team__container">
                 <h3 class="team__title">Ігор Дем'яненко</h3>
@@ -220,10 +224,8 @@
                 media="(min-width: 1200px)"
                 />
                 <img class="team__image"              
-                src="./images/mobile/teamdeveloper-450@1x.jpg 1x,  ./images/mobile/teamdeveloper-450@2x.jpg 2x"
-                alt="Frontend Developer" 
-                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"             
-                />
+                src="./images/mobile/teamdeveloper-450@1x.jpg"
+                alt="Frontend Developer"/>
                </picture>   
               <div class="team__container">
                 <h3 class="team__title">Ольга Рєпіна</h3>
@@ -272,10 +274,8 @@
                 media="(min-width: 1200px)"
                 />
                 <img class="team__image"              
-                src="./images/mobile/teammarketing-450@1x.jpg 1x,  ./images/mobile/teammarketing-450@2x.jpg 2x"
-                alt="Marketing" 
-                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"             
-                />
+                src="./images/mobile/teammarketing-450@1x.jpg"
+                alt="Marketing"/>
                </picture>              
               <div class="team__container">
                 <h3 class="team__title">Микола Тарасов</h3>
@@ -324,10 +324,8 @@
                 media="(min-width: 1200px)"
                 />
                 <img class="team__image"              
-                src="./images/mobile/teamuidesigner-450@1x.jpg 1x,  ./images/mobile/teamuidesigner-450@2x.jpg 2x"
-                alt="UI Designer" 
-                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"             
-                />
+                src="./images/mobile/teamuidesigner-450@1x.jpg"
+                alt="UI Designer"/>
                </picture>        
               <div class="team__container">
                 <h3 class="team__title">Михайло Єрмаков</h3>
@@ -362,8 +360,8 @@
                     </a>
                   </li>
                 </ul>
-              </div>
-            </li>            
+              </div> 
+            </li>         
           </ul>
         </div>
       </section>
@@ -553,25 +551,26 @@
   <use class="menu__icon-cross" href="./images/header-menu.svg#icon-cross"></use>
 </svg>
 </button>
-<ul class="navigation-menu">
+  <ul class="navigation-menu">
   <li class="navigation-menu__item">
-    <a class="navigation-menu__link" href="./index.html">Студія</a>
+    <a class="navigation-menu__link navigation-menu__link--current" href="./index.html">Студія</a>
   </li>
   <li class="navigation-menu__item">
-    <a class="navigation-menu__link" href="./portfolio.html">Портфоліо</a>
+    <a class="navigation-menu__link navigation-menu__link--current" href="./portfolio.html">Портфоліо</a>
   </li>
   <li class="navigation-menu__item">
-    <a class="navigation-menu__link" href="#">Контакти</a>
+    <a class="navigation-menu__link navigation-menu__link--current" href="#">Контакти</a>
   </li>
 </ul>
-<ul class="contact-menu">
-  <li class="contact-menu__item">
-    <a href="mailto:info@devstudio.com" class="contact-menu__link">info@devstudio.com</a>
-  </li>
-  <li class="contact-menu__item">
-    <a class="contact-menu__link" href="tel:+380961111111">+38 096 111 11 11</a>
-  </li>
-</ul>
+<div class="menu-container">
+  <ul class="contact-menu">
+    <li class="contact-menu__item">
+      <a href="mailto:info@devstudio.com" class="contact-menu__link">info@devstudio.com</a>
+    </li>
+    <li class="contact-menu__item">
+      <a class="contact-menu__link" href="tel:+380961111111">+38 096 111 11 11</a>
+    </li>
+  </ul>
 <ul class="social-menu">
   <li class="social-menu__item">
     <a class="social-menu__link">Instagram</a>
@@ -586,6 +585,7 @@
     <a class="social-menu__link">Linkedin</a>
   </li>
 </ul>
+</div>
 </div>
 
       <script src="./js/modal.js"></script>
